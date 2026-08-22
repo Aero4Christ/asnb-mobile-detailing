@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 const brandLogo = "/assets/BlueLogo.png";
-const heroImage = "/assets/WebsiteBackground.jpg";
+const heroImage = "/assets/HeroImage.jpg";
 const interiorImage = "/assets/Image4.webp";
 const setupImage = "/assets/Detail-Tool.jpg";
 const sweepImage = "/assets/Image1.jpg";
@@ -80,12 +80,12 @@ export default function Home() {
       </header>
 
       <section id="top" className="hero-bay relative isolate min-h-[775px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }} /><div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,11,34,0.99)_0%,rgba(3,21,56,0.94)_35%,rgba(2,11,34,0.37)_72%,rgba(2,11,34,0.72)_100%)]" /><div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_33%,rgba(8,117,237,0.25),transparent_22%),linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.46))]" />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }} /><div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,11,34,0.28)_0%,rgba(3,21,56,0.58)_44%,rgba(2,11,34,0.96)_100%)]" /><div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_33%,rgba(8,117,237,0.22),transparent_22%),linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.46))]" />
         <div className="hero-arc absolute -left-[18%] top-6 h-[580px] w-[88%] rounded-[50%] border border-[#d99a17]/55 sm:-left-[8%] sm:w-[67%]" /><div className="hero-arc absolute -left-[16%] top-11 h-[544px] w-[85%] rounded-[50%] border border-[#0875ed]/70 sm:-left-[6%] sm:w-[64%]" />
-        <GoldSpark className="absolute left-[15%] top-32 z-10 size-7 animate-pulse sm:left-[24%]" />
+        <GoldSpark className="absolute right-[15%] top-32 z-10 size-7 animate-pulse sm:right-[24%]" />
         <div className="relative mx-auto flex min-h-[775px] max-w-[1440px] flex-col justify-end px-5 pb-14 pt-20 md:px-9 lg:px-14 lg:pb-16">
-          <div className="max-w-[720px]"><p className="eyebrow text-[#f7cf58]"><span className="mr-3 inline-block h-px w-9 bg-[#d99a17] align-middle" /> Mobile Detailing & Mobile Oil Changes</p><h1 className="mt-5 font-display text-[clamp(4.5rem,11vw,10.5rem)] leading-[0.77] uppercase tracking-[-0.045em] text-white">Professional<br /><span className="gold-text">detailing.</span></h1><p className="mt-7 max-w-xl text-lg leading-8 text-white/82">Premium results at your home, work, or wherever your vehicle is parked. A’s n B brings the care, equipment, and finishing touch to you.</p><div className="mt-9 flex flex-wrap gap-3"><a href={phoneHref} className="gold-button"><Phone className="size-4" /> Call to book</a><a href={`mailto:${email}?subject=Appointment%20Request%20for%20A%27s%20n%20B%20Mobile%20Detailing`} className="blue-button"><Mail className="size-4" /> Email us</a></div></div>
-          <div className="mt-14 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/20 pt-5 text-[11px] font-semibold uppercase tracking-[0.13em] text-white/70"><span className="flex items-center gap-2"><MapPin className="size-3.5 text-[#f7cf58]" /> We come to you</span><span className="flex items-center gap-2"><ShieldCheck className="size-3.5 text-[#f7cf58]" /> Licensed & insured</span><span className="flex items-center gap-2"><BadgeCheck className="size-3.5 text-[#f7cf58]" /> Clean, protect, restore</span></div>
+          <div className="ml-auto max-w-[720px] text-right"><p className="eyebrow text-[#f7cf58]"><span className="mr-3 inline-block h-px w-9 bg-[#d99a17] align-middle" /> Mobile Detailing & Mobile Oil Changes</p><h1 className="mt-5 font-display text-[clamp(4.5rem,11vw,10.5rem)] leading-[0.77] uppercase tracking-[-0.045em] text-white">Professional<br /><span className="gold-text">detailing.</span></h1><p className="mt-7 ml-auto max-w-xl text-lg leading-8 text-white/82">Premium results at your home, work, or wherever your vehicle is parked. A’s n B brings the care, equipment, and finishing touch to you.</p><div className="mt-9 flex flex-wrap justify-end gap-3"><a href={phoneHref} className="gold-button"><Phone className="size-4" /> Call to book</a><a href={`mailto:${email}?subject=Appointment%20Request%20for%20A%27s%20n%20B%20Mobile%20Detailing`} className="blue-button"><Mail className="size-4" /> Email us</a></div></div>
+          <div className="mt-14 flex flex-wrap justify-end gap-x-7 gap-y-3 border-t border-white/20 pt-5 text-[11px] font-semibold uppercase tracking-[0.13em] text-white/70"><span className="flex items-center gap-2"><MapPin className="size-3.5 text-[#f7cf58]" /> We come to you</span><span className="flex items-center gap-2"><ShieldCheck className="size-3.5 text-[#f7cf58]" /> Licensed & insured</span><span className="flex items-center gap-2"><BadgeCheck className="size-3.5 text-[#f7cf58]" /> Clean, protect, restore</span></div>
         </div>
       </section>
 
