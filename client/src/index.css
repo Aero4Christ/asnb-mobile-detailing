@@ -11,6 +11,7 @@
 @layer base { * { @apply border-border outline-ring/50; } html { scroll-behavior: smooth; } body { @apply bg-background font-sans text-foreground antialiased; } ::selection { background: #d99a17; color: #031538; } button:not(:disabled), a[href] { @apply cursor-pointer; } }
 @layer components {
   .top-ribbon { @apply relative z-40 flex items-center justify-center gap-2 border-b border-[#d99a17]/55 bg-black px-4 py-2 text-center text-[10px] font-bold uppercase tracking-[0.15em] text-[#f7cf58]; }
+  .top-ribbon-badge { @apply border border-[#f7cf58] bg-[#031538] px-2 py-1 text-[9px] tracking-[0.12em] text-[#f7cf58]; }
   .site-header { @apply relative z-30 border-b border-[#d99a17]/25 bg-[#031538]/95 backdrop-blur; }
   .nav-link { @apply transition hover:text-[#f7cf58]; }
   .eyebrow { @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em]; }
