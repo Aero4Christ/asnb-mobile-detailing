@@ -22,11 +22,11 @@ import {
   X,
 } from "lucide-react";
 
-const brandLogo = "/assets/asnb-logo.svg";
-const heroImage = "/assets/detailing-hero.svg";
-const interiorImage = "/assets/interior-detail.svg";
-const setupImage = "/assets/mobile-setup.svg";
-const sweepImage = "/assets/detail-sweep.svg";
+const brandLogo = "/assets/BlueLogo.png";
+const heroImage = "/assets/WebsiteBackground.jpg";
+const interiorImage = "/assets/Image4.webp";
+const setupImage = "/assets/Detail-Tool.jpg";
+const sweepImage = "/assets/Image1.jpg";
 const phoneText = "(940) 332-8817";
 const phoneHref = "tel:+19403328817";
 const email = "asandbmobile@gmail.com";
