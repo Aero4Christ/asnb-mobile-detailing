@@ -1,0 +1,33 @@
+/** A’s n B design reminder: use deep navy / black foundations, electric-blue structure, metallic gold highlights, and pink only as a rare finishing accent. */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline { --font-display: "Bebas Neue", sans-serif; --font-roman: "Cinzel", serif; --font-sans: "DM Sans", sans-serif; --color-background: var(--background); --color-foreground: var(--foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring); }
+:root { --background: oklch(0.12 0.04 260); --foreground: oklch(0.98 0.01 90); --primary: oklch(0.66 0.17 65); --primary-foreground: oklch(0.13 0.04 260); --border: oklch(0.75 0.13 68 / 42%); --input: oklch(0.75 0.13 68 / 42%); --ring: oklch(0.66 0.17 65); }
+
+@layer base { * { @apply border-border outline-ring/50; } html { scroll-behavior: smooth; } body { @apply bg-background font-sans text-foreground antialiased; } ::selection { background: #d99a17; color: #031538; } button:not(:disabled), a[href] { @apply cursor-pointer; } }
+@layer components {
+  .top-ribbon { @apply relative z-40 flex items-center justify-center gap-2 border-b border-[#d99a17]/55 bg-black px-4 py-2 text-center text-[10px] font-bold uppercase tracking-[0.15em] text-[#f7cf58]; }
+  .site-header { @apply relative z-30 border-b border-[#d99a17]/25 bg-[#031538]/95 backdrop-blur; }
+  .nav-link { @apply transition hover:text-[#f7cf58]; }
+  .eyebrow { @apply text-[11px] font-bold uppercase tracking-[0.16em]; }
+  .gold-text { background: linear-gradient(120deg,#9a6506 0%,#f7cf58 38%,#fff0a2 50%,#d99a17 75%,#9a6506 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .gold-button { @apply inline-flex items-center gap-2 bg-gradient-to-br from-[#f7cf58] via-[#d99a17] to-[#9a6506] px-5 py-3.5 text-xs font-bold uppercase tracking-[0.13em] text-[#031538] shadow-[0_0_22px_rgba(217,154,23,0.2)] transition duration-200 hover:brightness-110 active:scale-[0.97]; }
+  .blue-button { @apply inline-flex items-center gap-2 border border-[#0875ed] bg-[#0754c7]/35 px-5 py-3.5 text-xs font-bold uppercase tracking-[0.13em] text-white transition duration-200 hover:bg-[#0875ed] active:scale-[0.97]; }
+  .text-link { @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.13em] text-[#f7cf58] transition hover:text-white; }
+  .brand-navy { background-color:#031538; background-image: radial-gradient(rgba(247,207,88,0.11) .6px,transparent .7px), linear-gradient(115deg,transparent 0 45%,rgba(8,117,237,0.1) 48%,transparent 51%); background-size:7px 7px,100% 100%; }
+  .blue-panel { background-color:#061c43; background-image: radial-gradient(rgba(255,255,255,0.08) .55px,transparent .65px), linear-gradient(100deg,transparent 0 42%,rgba(8,117,237,0.14) 47%,transparent 52%); background-size:6px 6px,100% 100%; }
+  .gold-rule { @apply h-px bg-gradient-to-r from-transparent via-[#d99a17] to-transparent; }
+  .service-chip { @apply flex items-center gap-3 border-l-2 border-[#d99a17] bg-[#031538]/55 px-4 py-4 text-sm font-semibold uppercase tracking-[0.06em] text-white/85 transition hover:border-[#0875ed] hover:bg-[#031538]; }
+  .price-marker { @apply relative border border-[#d99a17]/65 bg-[#020b22]/75 p-6 shadow-[inset_0_1px_0_rgba(247,207,88,0.17)] transition hover:-translate-y-1 hover:border-[#f7cf58]; }
+  .package-paper { background-color:#f2efe6; background-image: radial-gradient(rgba(3,21,56,0.12) .55px,transparent .7px), linear-gradient(130deg,transparent 0 48%,rgba(8,117,237,0.06) 50%,transparent 52%); background-size:7px 7px,100% 100%; }
+  .package-card { @apply border border-[#d99a17]/70 bg-[#fffdf8]/90 p-7 shadow-[0_14px_32px_rgba(3,21,56,0.09)] transition hover:-translate-y-1; }
+  .package-card-featured { @apply border-2 border-[#0754c7] bg-white shadow-[0_16px_35px_rgba(7,84,199,0.18)]; }
+  .gold-frame { @apply border border-[#d99a17] p-2 shadow-[0_0_0_5px_rgba(217,154,23,0.12),0_20px_50px_rgba(0,0,0,0.35)]; }
+  .appointment-panel { background-color:#031538; }
+}
+@media (prefers-reduced-motion:no-preference) { .hero-arc { animation: gloss-sweep 1.2s cubic-bezier(.23,1,.32,1) both; } }
+@keyframes gloss-sweep { from { opacity:0; transform:translateX(-30px) scale(.98); } to { opacity:1; transform:translateX(0) scale(1); } }
