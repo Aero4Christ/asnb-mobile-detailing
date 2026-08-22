@@ -14,8 +14,8 @@
   .site-header { @apply relative z-30 border-b border-[#d99a17]/25 bg-[#031538]/95 backdrop-blur; }
   .nav-link { @apply transition hover:text-[#f7cf58]; }
   .eyebrow { @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em]; }
-  .eyebrow::before { content:""; display:inline-block; width:20px; height:28px; flex:none; background:url('/assets/Cross-Brand.png') center / contain no-repeat; }
-  .eyebrow > span { display:none; }
+  .eyebrow::before, .package-paper .text-center > .eyebrow::after { content:""; display:inline-block; width:34px; height:48px; flex:none; background:url('/assets/Cross-Brand.png') center / contain no-repeat; filter:drop-shadow(0 0 3px rgba(247,207,88,0.55)); }
+  .eyebrow > span { display:none !important; }
   .gold-text { background: linear-gradient(120deg,#9a6506 0%,#f7cf58 38%,#fff0a2 50%,#d99a17 75%,#9a6506 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .gold-button { @apply inline-flex items-center gap-2 bg-gradient-to-br from-[#f7cf58] via-[#d99a17] to-[#9a6506] px-5 py-3.5 text-xs font-bold uppercase tracking-[0.13em] text-[#031538] shadow-[0_0_22px_rgba(217,154,23,0.2)] transition duration-200 hover:brightness-110 active:scale-[0.97]; }
   .blue-button { @apply inline-flex items-center gap-2 border border-[#0875ed] bg-[#0754c7]/35 px-5 py-3.5 text-xs font-bold uppercase tracking-[0.13em] text-white transition duration-200 hover:bg-[#0875ed] active:scale-[0.97]; }

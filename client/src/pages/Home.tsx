@@ -18,7 +18,6 @@ import {
   Phone,
   ShieldCheck,
   Sparkles,
-  Star,
   X,
 } from "lucide-react";
 
@@ -58,7 +57,7 @@ function BrandLogo({ className = "" }: { className?: string }) {
 }
 
 function GoldSpark({ className = "" }: { className?: string }) {
-  return <Star aria-hidden="true" className={`fill-[#f7cf58] text-[#d99a17] ${className}`} />;
+  return null;
 }
 
 export default function Home() {
