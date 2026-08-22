@@ -7,17 +7,14 @@ import {
   ArrowDownRight,
   ArrowUpRight,
   BadgeCheck,
-  CarFront,
   Check,
   ChevronDown,
-  Droplets,
   Heart,
   Mail,
   MapPin,
   Menu,
   Phone,
   ShieldCheck,
-  Sparkles,
   X,
 } from "lucide-react";
 
@@ -31,9 +28,9 @@ const phoneHref = "tel:+19403328817";
 const email = "asandbmobile@gmail.com";
 
 const startingPoints = [
-  { name: "Interior Detail", price: "$60", note: "Deep clean · Fresh · Like new", icon: Sparkles },
-  { name: "Interior + Exterior", price: "$120", note: "The complete refresh", icon: CarFront },
-  { name: "Mobile Oil Change", price: "$75", note: "Convenient vehicle care", icon: Droplets },
+  { name: "Interior Detail", price: "$60", note: "Deep clean · Fresh · Like new", icon: "/assets/interior-detail-icon.png" },
+  { name: "Interior + Exterior", price: "$120", note: "The complete refresh", icon: "/assets/interior-exterior-icon.png" },
+  { name: "Mobile Oil Change", price: "$75", note: "Convenient vehicle care", icon: "/assets/mobile-oil-change-icon.png" },
 ];
 
 const packages = [
@@ -92,7 +89,7 @@ export default function Home() {
 
       <section id="services" className="blue-panel relative px-5 py-20 md:px-9 md:py-28 lg:px-14"><GoldSpark className="absolute right-[7%] top-16 size-6" /><div className="mx-auto max-w-[1310px]"><div className="grid gap-8 border-b border-[#f7cf58]/45 pb-9 lg:grid-cols-[1fr_0.75fr] lg:items-end"><div><p className="eyebrow text-[#f7cf58]">WHAT WE DO</p><h2 className="mt-5 font-display text-5xl leading-[0.84] uppercase tracking-[-0.04em] text-white sm:text-7xl">Mobile service.<br /><span className="text-[#f7cf58]">Serious shine.</span></h2></div><p className="max-w-lg leading-7 text-white/75">Interior, exterior, protection, restoration, and on-the-go maintenance. Choose the service that fits your vehicle, then call or text to get your appointment on the calendar.</p></div><div className="mt-10 grid gap-x-8 gap-y-5 md:grid-cols-2 lg:grid-cols-4">{detailServices.map((service, index) => <div key={service} className="service-chip"><span className="font-display text-2xl text-[#f7cf58]">0{index + 1}</span><span>{service}</span></div>)}</div><div className="mt-12 flex flex-wrap gap-4"><a className="gold-button" href={phoneHref}>Book your appointment <ArrowUpRight className="size-4" /></a><a className="text-link" href={`mailto:${email}`}>Ask about a custom service <ArrowDownRight className="size-4" /></a></div></div></section>
 
-      <section className="ink-section relative overflow-hidden px-5 py-20 md:px-9 md:py-28 lg:px-14"><img src={sweepImage} alt="Glossy paint reflection after detailing" className="absolute inset-0 size-full object-cover opacity-35 mix-blend-screen" /><div className="absolute inset-0 bg-[linear-gradient(110deg,#020b22_18%,rgba(3,21,56,0.7)_64%,#020b22_100%)]" /><div className="relative mx-auto grid max-w-[1310px] gap-8 lg:grid-cols-[0.8fr_1.2fr]"><div><p className="eyebrow text-[#f7cf58]">POPULAR STARTING POINTS</p><h2 className="mt-5 font-display text-5xl leading-[0.84] uppercase tracking-[-0.04em] sm:text-7xl">Find your<br /><span className="text-[#0875ed]">starting line.</span></h2><p className="mt-6 max-w-sm leading-7 text-white/65">Every vehicle is different. These advertised starting points help you begin the right conversation.</p></div><div className="grid gap-4 md:grid-cols-3">{startingPoints.map(({ name, price, note, icon: Icon }) => <article key={name} className="price-marker"><Icon className="size-5 text-[#f7cf58]" /><p className="mt-7 font-display text-xl uppercase tracking-wide text-white">{name}</p><p className="mt-2 font-display text-6xl leading-none text-[#f7cf58]">{price}</p><p className="mt-3 text-sm leading-6 text-white/62">{note}</p><p className="mt-6 text-[10px] font-bold uppercase tracking-[0.12em] text-[#0875ed]">Starting at</p></article>)}</div></div></section>
+      <section className="ink-section relative overflow-hidden px-5 py-20 md:px-9 md:py-28 lg:px-14"><img src={sweepImage} alt="Glossy paint reflection after detailing" className="absolute inset-0 size-full object-cover opacity-35 mix-blend-screen" /><div className="absolute inset-0 bg-[linear-gradient(110deg,#020b22_18%,rgba(3,21,56,0.7)_64%,#020b22_100%)]" /><div className="relative mx-auto grid max-w-[1310px] gap-8 lg:grid-cols-[0.8fr_1.2fr]"><div><p className="eyebrow text-[#f7cf58]">POPULAR STARTING POINTS</p><h2 className="mt-5 font-display text-5xl leading-[0.84] uppercase tracking-[-0.04em] sm:text-7xl">Find your<br /><span className="text-[#0875ed]">starting line.</span></h2><p className="mt-6 max-w-sm leading-7 text-white/65">Every vehicle is different. These advertised starting points help you begin the right conversation.</p></div><div className="grid gap-4 md:grid-cols-3">{startingPoints.map(({ name, price, note, icon }) => <article key={name} className="price-marker"><img src={icon} alt="" aria-hidden="true" className="size-14 object-contain object-center" /><p className="mt-7 font-display text-xl uppercase tracking-wide text-white">{name}</p><p className="mt-2 font-display text-6xl leading-none text-[#f7cf58]">{price}</p><p className="mt-3 text-sm leading-6 text-white/62">{note}</p><p className="mt-6 text-[10px] font-bold uppercase tracking-[0.12em] text-[#0875ed]">Starting at</p></article>)}</div></div></section>
 
       <section id="packages" className="package-paper relative px-5 py-20 text-[#061c43] md:px-9 md:py-28 lg:px-14"><div className="mx-auto max-w-[1310px]"><div className="text-center"><p className="eyebrow text-[#9a6506]">DETAILING PACKAGES</p><h2 className="mt-4 font-display text-5xl leading-[0.84] uppercase tracking-[-0.04em] sm:text-7xl">Pick your level<br /><span className="text-[#0754c7]">of care.</span></h2><p className="mx-auto mt-6 max-w-xl leading-7 text-[#31476d]">Clear starting points for the detail your vehicle needs. Call or text A’s n B to confirm the best fit for your vehicle.</p></div><div className="mt-12 grid gap-5 lg:grid-cols-3">{packages.map((pack, index) => <article key={pack.tier} className={`package-card ${index === 1 ? "package-card-featured" : ""}`}><p className="eyebrow text-[#d99a17]">{index === 1 ? "Most requested" : "Mobile detailing"}</p><h3 className="mt-4 font-display text-4xl uppercase tracking-[-0.03em]">{pack.tier}</h3><div className="my-5 h-px bg-[#d99a17]/70" /><p className="font-display text-7xl leading-none text-[#0754c7]">{pack.price}</p><p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-[#9a6506]">Starting at</p><ul className="mt-7 space-y-3 border-t border-[#061c43]/15 pt-6 text-sm leading-5 text-[#31476d]">{pack.details.map((detail) => <li className="flex gap-2" key={detail}><Check className="mt-0.5 size-4 shrink-0 text-[#d99a17]" />{detail}</li>)}</ul><a href={phoneHref} className="mt-8 flex items-center justify-between border border-[#0754c7] px-4 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#061c43] transition hover:bg-[#0754c7] hover:text-white">Call to book <ArrowUpRight className="size-3.5" /></a></article>)}</div><p className="mx-auto mt-7 max-w-2xl text-center text-sm leading-6 text-[#486084]">Pricing may vary by vehicle size, condition, and selected work. Contact A’s n B for a straightforward appointment quote.</p></div></section>
 
