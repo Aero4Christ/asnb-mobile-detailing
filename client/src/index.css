@@ -26,6 +26,8 @@
   .brand-navy { background-color:#031538; background-image: radial-gradient(rgba(247,207,88,0.11) .6px,transparent .7px), linear-gradient(115deg,transparent 0 45%,rgba(8,117,237,0.1) 48%,transparent 51%); background-size:7px 7px,100% 100%; }
   .blue-panel { background-color:#061c43; background-image: radial-gradient(rgba(255,255,255,0.08) .55px,transparent .65px), linear-gradient(100deg,transparent 0 42%,rgba(8,117,237,0.14) 47%,transparent 52%); background-size:6px 6px,100% 100%; }
   .blue-panel::before { content:""; position:absolute; inset:0; z-index:0; pointer-events:none; background:url('/assets/PinkLogo.png') center / min(55vw,560px) auto no-repeat; opacity:0.16; mix-blend-mode:screen; }
+  #services.blue-panel::before { background-position:left center; }
+  #faq.blue-panel::before { background-position:right center; }
   .blue-panel > * { position:relative; z-index:1; }
   .gold-rule { @apply h-px bg-gradient-to-r from-transparent via-[#d99a17] to-transparent; }
   .service-chip { @apply flex items-center gap-3 border-l-2 border-[#d99a17] bg-[#031538]/55 px-4 py-4 text-sm font-semibold uppercase tracking-[0.06em] text-white/85 transition hover:border-[#0875ed] hover:bg-[#031538]; }
