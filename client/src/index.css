@@ -32,6 +32,7 @@
   .package-card { @apply border border-[#d99a17]/70 bg-[#fffdf8]/90 p-7 shadow-[0_14px_32px_rgba(3,21,56,0.09)] transition hover:-translate-y-1; }
   .package-card-featured { @apply border-2 border-[#0754c7] bg-white shadow-[0_16px_35px_rgba(7,84,199,0.18)]; }
   .gold-frame { @apply border border-[#d99a17] p-2 shadow-[0_0_0_5px_rgba(217,154,23,0.12),0_20px_50px_rgba(0,0,0,0.35)]; }
+  .gold-frame > div { background:linear-gradient(to top,rgba(0,0,0,0.98) 0%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.35) 72%,transparent 100%) !important; }
   .appointment-panel { background-color:#031538; }
 }
 @media (prefers-reduced-motion:no-preference) { .hero-arc { animation: gloss-sweep 1.2s cubic-bezier(.23,1,.32,1) both; } }
