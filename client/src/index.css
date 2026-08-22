@@ -31,6 +31,10 @@
   .blue-panel > * { position:relative; z-index:1; }
   .gold-rule { @apply h-px bg-gradient-to-r from-transparent via-[#d99a17] to-transparent; }
   .service-chip { @apply flex items-center gap-3 border-l-2 border-[#d99a17] bg-[#031538]/55 px-4 py-4 text-sm font-semibold uppercase tracking-[0.06em] text-white/85 transition hover:border-[#0875ed] hover:bg-[#031538]; }
+  .service-carousel { @apply -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 md:-mx-9 md:px-9 lg:-mx-14 lg:px-14; scrollbar-color:#d99a17 #031538; scrollbar-width:thin; }
+  .service-slide { @apply flex min-h-44 min-w-[82%] snap-start flex-col justify-between border border-[#d99a17] bg-[#0754c7]/75 p-6 shadow-[inset_0_0_0_1px_rgba(247,207,88,0.12)] transition hover:bg-[#0875ed]/80 sm:min-w-[45%] lg:min-w-[calc(25%-12px)]; }
+  .service-slide-number { @apply font-display text-5xl leading-none text-[#f7cf58]; }
+  .service-slide-title { @apply max-w-[12rem] text-lg font-bold uppercase leading-tight tracking-[0.08em] text-[#e95591]; }
   .price-marker { @apply relative border border-[#d99a17]/65 bg-[#020b22]/75 p-6 shadow-[inset_0_1px_0_rgba(247,207,88,0.17)] transition hover:-translate-y-1 hover:border-[#f7cf58]; }
   .package-paper { background-color:#f2efe6; background-image: radial-gradient(rgba(3,21,56,0.12) .55px,transparent .7px), linear-gradient(130deg,transparent 0 48%,rgba(8,117,237,0.06) 50%,transparent 52%); background-size:7px 7px,100% 100%; }
   .package-card { @apply border border-[#d99a17]/70 bg-[#fffdf8]/90 p-7 shadow-[0_14px_32px_rgba(3,21,56,0.09)] transition hover:-translate-y-1; }
