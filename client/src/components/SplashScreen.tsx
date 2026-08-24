@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const SPLASH_SESSION_KEY = "asnb-wheel-spin-intro-seen";
-const SPLASH_DURATION_MS = 2_600;
+const SPLASH_DURATION_MS = 5_000;
 const SPLASH_EXIT_MS = 380;
-const SPLASH_FAILSAFE_MS = 3_000;
+const SPLASH_FAILSAFE_MS = 6_000;
 
 function hasSeenSplash() {
   try {
