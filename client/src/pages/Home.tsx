@@ -65,7 +65,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#020b22] pb-20 text-white md:pb-0">
-      <div className="top-ribbon"><span>From Dirt to New</span><span className="hidden sm:inline"> · </span><span className="top-ribbon-badge hidden sm:inline">Professional Detailing</span></div>
       <header className="site-header">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-5 py-3 md:px-9 lg:px-14">
           <a href="#top" className="flex items-center gap-3" aria-label="A’s n B Mobile Detailing home"><BrandLogo className="size-14 rounded-full object-cover object-center shadow-[0_0_18px_rgba(8,117,237,0.28)]" /><div className="hidden min-[420px]:block"><p className="font-roman text-sm font-semibold uppercase tracking-[0.18em] text-[#f7cf58]">A’s n B</p><p className="text-[9px] font-bold uppercase tracking-[0.17em] text-white/65">Mobile Detailing</p></div></a>
